@@ -1,0 +1,7 @@
+project_id = "wifwnonmbjzqqrzoiqbv"
+
+[functions.verify-payment]
+verify_jwt = false
+
+[functions.send-customer-notification]
+verify_jwt = false

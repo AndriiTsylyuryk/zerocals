@@ -74,6 +74,12 @@ export default {
   'checkout.selectLocation': 'Будь ласка, оберіть пункт видачі',
   'checkout.selectDate': 'Будь ласка, оберіть дату отримання',
   'checkout.selectTime': 'Будь ласка, оберіть час отримання',
+  'checkout.paymentMethod': 'Спосіб оплати',
+  'checkout.payByCard': 'Оплата карткою',
+  'checkout.payByCash': 'Оплата готівкою',
+  'checkout.cashNote': 'Ви оплатите при отриманні замовлення',
+  'checkout.placeOrder': 'Оформити замовлення',
+  'checkout.orderPlaced': 'Замовлення успішно оформлено!',
 
   // Orders
   'orders.title': 'Мої замовлення',
@@ -82,6 +88,7 @@ export default {
   'orders.orderFrom': 'Замовлення від',
   'orders.items': 'товарів',
   'orders.loginRequired': 'Будь ласка, увійдіть, щоб переглянути свої замовлення',
+  'orders.awaitingCash': 'Очікує оплату готівкою',
 
   // Profile
   'profile.title': 'Мій профіль',

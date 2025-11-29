@@ -81,8 +81,7 @@ export default function Orders() {
       const { error } = await supabase
         .from('orders')
         .update({ status: 'cancelled' })
-        .eq('id', orderId)
-        .eq('status', 'pending');
+        .eq('id', orderId);
       
       if (error) throw error;
     },
@@ -164,17 +163,21 @@ export default function Orders() {
                       ? 'default' 
                       : order.status === 'pending' 
                       ? 'outline'
+                      : order.status === 'pending_cash'
+                      ? 'outline'
                       : order.status === 'cancelled'
                       ? 'destructive'
                       : 'secondary'
                   } className={
                     order.status === 'pending' 
                       ? 'border-yellow-500 text-yellow-600 bg-yellow-50'
+                      : order.status === 'pending_cash'
+                      ? 'border-green-500 text-green-600 bg-green-50'
                       : order.status === 'processing'
                       ? 'bg-blue-50 text-blue-600 border-blue-500'
                       : ''
                   }>
-                    {order.status}
+                    {order.status === 'pending_cash' ? t('orders.awaitingCash') : order.status}
                   </Badge>
                 </div>
               </CardHeader>
@@ -267,6 +270,26 @@ export default function Orders() {
                         variant="destructive"
                         onClick={() => cancelOrderMutation.mutate(order.id)}
                         disabled={cancelOrderMutation.isPending || processingOrderId === order.id}
+                      >
+                        {cancelOrderMutation.isPending ? (
+                          <Loader2 className="h-4 w-4 animate-spin" />
+                        ) : (
+                          <X className="h-4 w-4" />
+                        )}
+                      </Button>
+                    </div>
+                  )}
+
+                  {/* Cancel Button for Cash Orders */}
+                  {order.status === 'pending_cash' && (
+                    <div className="flex gap-2">
+                      <div className="flex-1 text-sm text-muted-foreground p-2 bg-muted rounded">
+                        {t('checkout.cashNote')}
+                      </div>
+                      <Button 
+                        variant="destructive"
+                        onClick={() => cancelOrderMutation.mutate(order.id)}
+                        disabled={cancelOrderMutation.isPending}
                       >
                         {cancelOrderMutation.isPending ? (
                           <Loader2 className="h-4 w-4 animate-spin" />

@@ -74,6 +74,12 @@ export default {
   'checkout.selectLocation': 'Please select a pickup location',
   'checkout.selectDate': 'Please select a pickup date',
   'checkout.selectTime': 'Please select a pickup time',
+  'checkout.paymentMethod': 'Payment Method',
+  'checkout.payByCard': 'Pay by Card',
+  'checkout.payByCash': 'Pay in Cash',
+  'checkout.cashNote': 'You will pay when you receive your order',
+  'checkout.placeOrder': 'Place Order',
+  'checkout.orderPlaced': 'Order placed successfully!',
 
   // Orders
   'orders.title': 'My Orders',
@@ -82,6 +88,7 @@ export default {
   'orders.orderFrom': 'Order from',
   'orders.items': 'items',
   'orders.loginRequired': 'Please log in to view your orders',
+  'orders.awaitingCash': 'Awaiting Cash Payment',
 
   // Profile
   'profile.title': 'My Profile',

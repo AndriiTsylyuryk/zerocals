@@ -74,6 +74,12 @@ export default {
   'checkout.selectLocation': 'Palun vali kättesaamise koht',
   'checkout.selectDate': 'Palun vali kättesaamise kuupäev',
   'checkout.selectTime': 'Palun vali kättesaamise aeg',
+  'checkout.paymentMethod': 'Makseviis',
+  'checkout.payByCard': 'Maksa kaardiga',
+  'checkout.payByCash': 'Maksa sularahas',
+  'checkout.cashNote': 'Maksate tellimuse kättesaamisel',
+  'checkout.placeOrder': 'Esita tellimus',
+  'checkout.orderPlaced': 'Tellimus edukalt esitatud!',
 
   // Orders
   'orders.title': 'Minu tellimused',
@@ -82,6 +88,7 @@ export default {
   'orders.orderFrom': 'Tellimus alates',
   'orders.items': 'toodet',
   'orders.loginRequired': 'Palun logi sisse, et oma tellimusi vaadata',
+  'orders.awaitingCash': 'Ootab sularahamakset',
 
   // Profile
   'profile.title': 'Minu profiil',

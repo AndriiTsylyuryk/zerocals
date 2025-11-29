@@ -46,6 +46,7 @@ export default function Checkout() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [deliveryType, setDeliveryType] = useState<'shipping' | 'pickup'>('shipping');
+  const [paymentMethod, setPaymentMethod] = useState<'card' | 'cash'>('card');
   const [pickupLocationId, setPickupLocationId] = useState('');
   const [pickupDate, setPickupDate] = useState<Date>();
   const [pickupTime, setPickupTime] = useState('');
@@ -170,7 +171,7 @@ export default function Checkout() {
           emergency_contact_name: formData.emergencyContactName || null,
           emergency_contact_phone: formData.emergencyContactPhone || null,
           emergency_contact_email: formData.emergencyContactEmail || null,
-          status: 'pending',
+          status: paymentMethod === 'cash' ? 'pending_cash' : 'pending',
         })
         .select()
         .single();
@@ -201,22 +202,28 @@ export default function Checkout() {
         // Don't block the checkout if email fails
       }
 
-      // Create Stripe checkout session
-      const { data: session, error: sessionError } = await supabase.functions.invoke(
-        'create-checkout',
-        {
-          body: { orderId: order.id },
-        }
-      );
-
-      if (sessionError) throw sessionError;
-
-      // Redirect to Stripe
-      if (session?.url) {
+      if (paymentMethod === 'cash') {
+        // Cash payment - just confirm the order
         clearCart();
-        window.open(session.url, '_blank');
+        toast.success(t('checkout.orderPlaced'));
         navigate('/orders');
-        toast.success(t('checkout.redirecting'));
+      } else {
+        // Create Stripe checkout session
+        const { data: session, error: sessionError } = await supabase.functions.invoke(
+          'create-checkout',
+          {
+            body: { orderId: order.id },
+          }
+        );
+
+        if (sessionError) throw sessionError;
+
+        // Redirect to Stripe
+        if (session?.url) {
+          clearCart();
+          toast.success(t('checkout.redirecting'));
+          window.location.href = session.url;
+        }
       }
     } catch (error: any) {
       toast.error(error.message || 'Failed to create order');
@@ -430,7 +437,31 @@ export default function Checkout() {
               </div>
             </div>
 
-              <div className="border-t pt-4 mt-6">
+            {/* Payment Method Selection */}
+            <div className="space-y-2 border-t pt-4 mt-6">
+              <Label>{t('checkout.paymentMethod')}</Label>
+              <RadioGroup value={paymentMethod} onValueChange={(value: any) => setPaymentMethod(value)}>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="card" id="card" />
+                  <Label htmlFor="card" className="font-normal cursor-pointer">
+                    {t('checkout.payByCard')}
+                  </Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="cash" id="cash" />
+                  <Label htmlFor="cash" className="font-normal cursor-pointer">
+                    {t('checkout.payByCash')}
+                  </Label>
+                </div>
+              </RadioGroup>
+              {paymentMethod === 'cash' && (
+                <p className="text-sm text-muted-foreground mt-2">
+                  {t('checkout.cashNote')}
+                </p>
+              )}
+            </div>
+
+              <div className="border-t pt-4 mt-4">
                 <div className="flex justify-between text-xl font-bold">
                   <span>{t('cart.total')}:</span>
                   <span className="text-primary">€{total.toFixed(2)}</span>
@@ -438,7 +469,7 @@ export default function Checkout() {
               </div>
 
               <Button type="submit" className="w-full" size="lg" disabled={loading}>
-                {loading ? t('checkout.processing') : t('checkout.payStripe')}
+                {loading ? t('checkout.processing') : (paymentMethod === 'cash' ? t('checkout.placeOrder') : t('checkout.payStripe'))}
               </Button>
           </form>
         </CardContent>

@@ -101,8 +101,8 @@ export default function AdminOrders() {
                   {new Date(order.created_at!).toLocaleString()}
                 </p>
               </div>
-              <Badge variant={order.status === 'paid' ? 'default' : 'secondary'}>
-                {order.status}
+              <Badge variant={order.status === 'paid' || order.status === 'pending_cash' ? 'default' : 'secondary'}>
+                {order.status === 'pending_cash' ? 'Awaiting Cash' : order.status}
               </Badge>
             </div>
           </CardHeader>
@@ -190,6 +190,7 @@ export default function AdminOrders() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="pending">Pending</SelectItem>
+                    <SelectItem value="pending_cash">Awaiting Cash</SelectItem>
                     <SelectItem value="paid">Paid</SelectItem>
                     <SelectItem value="confirmed">Confirmed</SelectItem>
                     <SelectItem value="preparing">Preparing</SelectItem>
