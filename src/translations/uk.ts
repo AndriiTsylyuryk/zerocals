@@ -1,0 +1,131 @@
+export default {
+  // Navigation
+  'nav.home': 'Головна',
+  'nav.desserts': 'Десерти',
+  'nav.about': 'Про нас',
+  'nav.cart': 'Кошик',
+  'nav.login': 'Увійти',
+  'nav.logout': 'Вийти',
+  'nav.profile': 'Мій профіль',
+  'nav.orders': 'Мої замовлення',
+  'nav.admin': 'Адмін',
+
+  // Homepage
+  'home.title': 'Ласкаво просимо до ZeroCals',
+  'home.subtitle': 'Десерти без почуття провини, які чудово смакують. Низькокалорійні, корисні та виготовлені з турботою.',
+  'home.browseDesserts': 'Переглянути десерти',
+  'home.popularDesserts': 'Популярні десерти',
+  'home.cta.title': 'Готові насолодитися без провини?',
+  'home.cta.subtitle': 'Досліджуйте нашу повну колекцію десертів і задовольте свою тягу до солодкого',
+  'home.viewAll': 'Переглянути всі десерти',
+
+  // Desserts Page
+  'desserts.title': 'Наші десерти',
+  'desserts.subtitle': 'Насолоджуйтесь нашим вибором низькокалорійних десертів, створених для задоволення ваших бажань без почуття провини.',
+  'desserts.noDesserts': 'Десерти поки що недоступні.',
+  'desserts.calories': 'калорій',
+  'desserts.addToCart': 'Додати в кошик',
+  'desserts.addedToCart': 'додано в кошик',
+
+  // Dessert Detail
+  'detail.backToDesserts': 'Назад до десертів',
+  'detail.popular': 'Популярне',
+  'detail.perServing': 'на порцію',
+  'detail.nutritionalInfo': 'Харчова цінність',
+  'detail.noImage': 'Зображення недоступне',
+  'detail.notFound': 'Десерт не знайдено',
+
+  // Cart
+  'cart.title': 'Кошик',
+  'cart.items': 'товарів',
+  'cart.empty': 'Ваш кошик порожній',
+  'cart.orderSummary': 'Підсумок замовлення',
+  'cart.subtotal': 'Проміжний підсумок',
+  'cart.total': 'Всього',
+  'cart.checkout': 'Перейти до оформлення',
+
+  // Checkout
+  'checkout.title': 'Оформлення замовлення',
+  'checkout.shippingInfo': 'Інформація про доставку',
+  'checkout.fullName': 'Повне ім\'я',
+  'checkout.email': 'Електронна пошта',
+  'checkout.address': 'Адреса',
+  'checkout.city': 'Місто',
+  'checkout.zipCode': 'Поштовий індекс',
+  'checkout.processing': 'Обробка...',
+  'checkout.payStripe': 'Оплатити через Stripe',
+  'checkout.loginRequired': 'Будь ласка, увійдіть для оформлення замовлення',
+  'checkout.redirecting': 'Перенаправлення на оплату...',
+  'checkout.emergencyContact': 'Контакт на випадок надзвичайної ситуації (необов\'язково)',
+  'checkout.emergencyContactDescription': 'Надайте контактну інформацію на випадок, якщо ми не зможемо виконати ваше замовлення',
+  'checkout.emergencyContactName': 'Ім\'я контактної особи',
+  'checkout.emergencyContactPhone': 'Телефон контактної особи',
+  'checkout.emergencyContactEmail': 'Email контактної особи',
+  'checkout.deliveryMethod': 'Спосіб доставки',
+  'checkout.shipping': 'Доставка (на адресу)',
+  'checkout.selfPickup': 'Самовивіз',
+  'checkout.pickupLocation': 'Пункт видачі',
+  'checkout.selectPickupLocation': 'Оберіть пункт видачі',
+  'checkout.pickupDate': 'Дата отримання',
+  'checkout.pickADate': 'Оберіть дату',
+  'checkout.pickupTime': 'Час отримання',
+  'checkout.pickupHours': 'Години роботи: 9:00 - 18:00',
+  'checkout.instructions': 'Інструкції',
+  'checkout.selectLocation': 'Будь ласка, оберіть пункт видачі',
+  'checkout.selectDate': 'Будь ласка, оберіть дату отримання',
+  'checkout.selectTime': 'Будь ласка, оберіть час отримання',
+
+  // Orders
+  'orders.title': 'Мої замовлення',
+  'orders.noOrders': 'Замовлень поки немає',
+  'orders.startShopping': 'Почати покупки',
+  'orders.orderFrom': 'Замовлення від',
+  'orders.items': 'товарів',
+  'orders.loginRequired': 'Будь ласка, увійдіть, щоб переглянути свої замовлення',
+
+  // Profile
+  'profile.title': 'Мій профіль',
+  'profile.email': 'Електронна пошта',
+  'profile.fullName': 'Повне ім\'я',
+  'profile.save': 'Зберегти зміни',
+  'profile.saved': 'Профіль успішно оновлено',
+  'profile.loginRequired': 'Будь ласка, увійдіть, щоб переглянути свій профіль',
+
+  // Auth
+  'auth.login': 'Увійти',
+  'auth.signup': 'Зареєструватися',
+  'auth.signupTitle': 'Створити обліковий запис',
+  'auth.loginTitle': 'З поверненням',
+  'auth.password': 'Пароль',
+  'auth.confirmPassword': 'Підтвердіть пароль',
+  'auth.haveAccount': 'Вже є обліковий запис?',
+  'auth.noAccount': 'Немає облікового запису?',
+  'auth.signupLink': 'Зареєструватися',
+  'auth.loginLink': 'Увійти',
+  'auth.or': 'або',
+
+  // About
+  'about.title': 'Про ZeroCals',
+  'about.mission': 'Наша місія',
+  'about.missionText': 'У ZeroCals ми віримо, що вам не потрібно жертвувати смаком заради здоров\'я. Наша місія - створювати смачні низькокалорійні десерти, які задовольняють вашу тягу до солодкого без почуття провини.',
+  'about.story': 'Наша історія',
+  'about.storyText': 'Заснована у 2024 році, ZeroCals народилася з простої ідеї: корисні десерти можуть бути дивовижно смачними. Ми використовуємо лише найкращі інгредієнти та інноваційні техніки для створення смаколиків, які настільки ж корисні, наскільки й смачні.',
+
+  // Admin
+  'admin.title': 'Панель адміністратора',
+  'admin.products': 'Продукти',
+  'admin.orders': 'Замовлення',
+  'admin.accessDenied': 'Доступ заборонено. Потрібні права адміністратора.',
+  'admin.goHome': 'На головну',
+  'admin.loading': 'Завантаження...',
+
+  // Common
+  'common.status': 'Статус',
+  'common.date': 'Дата',
+  'common.quantity': 'Кількість',
+  'common.price': 'Ціна',
+  'common.cancel': 'Скасувати',
+  'common.save': 'Зберегти',
+  'common.delete': 'Видалити',
+  'common.edit': 'Редагувати',
+};

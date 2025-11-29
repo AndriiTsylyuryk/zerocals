@@ -1,0 +1,131 @@
+export default {
+  // Navigation
+  'nav.home': 'Avaleht',
+  'nav.desserts': 'Magustoidud',
+  'nav.about': 'Meist',
+  'nav.cart': 'Ostukorv',
+  'nav.login': 'Logi sisse',
+  'nav.logout': 'Logi välja',
+  'nav.profile': 'Minu profiil',
+  'nav.orders': 'Minu tellimused',
+  'nav.admin': 'Admin',
+
+  // Homepage
+  'home.title': 'Tere tulemast ZeroCals',
+  'home.subtitle': 'Süütundeteta magustoidud, mis maitsvad suurepäraselt. Madala kalorikogusega, tervislikud ja hoolikalt valmistatud.',
+  'home.browseDesserts': 'Sirvi magustoite',
+  'home.popularDesserts': 'Populaarsed magustoidud',
+  'home.cta.title': 'Valmis süütundeteta nautima?',
+  'home.cta.subtitle': 'Tutvu meie täieliku magustoidu valikuga ja rahulda oma maiushimu',
+  'home.viewAll': 'Vaata kõiki magustoite',
+
+  // Desserts Page
+  'desserts.title': 'Meie magustoidud',
+  'desserts.subtitle': 'Naudi meie valikut madalate kaloritega magustoite, mis on loodud rahuldama sinu himusid ilma süütundeta.',
+  'desserts.noDesserts': 'Magustoite pole veel saadaval.',
+  'desserts.calories': 'kalorit',
+  'desserts.addToCart': 'Lisa ostukorvi',
+  'desserts.addedToCart': 'lisatud ostukorvi',
+
+  // Dessert Detail
+  'detail.backToDesserts': 'Tagasi magustoidude juurde',
+  'detail.popular': 'Populaarne',
+  'detail.perServing': 'portsionis',
+  'detail.nutritionalInfo': 'Toitumisalane teave',
+  'detail.noImage': 'Pilt pole saadaval',
+  'detail.notFound': 'Magustoitu ei leitud',
+
+  // Cart
+  'cart.title': 'Ostukorv',
+  'cart.items': 'toodet',
+  'cart.empty': 'Teie ostukorv on tühi',
+  'cart.orderSummary': 'Tellimuse kokkuvõte',
+  'cart.subtotal': 'Vahesumma',
+  'cart.total': 'Kokku',
+  'cart.checkout': 'Jätka kassasse',
+
+  // Checkout
+  'checkout.title': 'Kassa',
+  'checkout.shippingInfo': 'Tarneteave',
+  'checkout.fullName': 'Täisnimi',
+  'checkout.email': 'E-post',
+  'checkout.address': 'Aadress',
+  'checkout.city': 'Linn',
+  'checkout.zipCode': 'Postiindeks',
+  'checkout.processing': 'Töötlen...',
+  'checkout.payStripe': 'Maksa Stripe\'iga',
+  'checkout.loginRequired': 'Palun logi sisse, et kassasse minna',
+  'checkout.redirecting': 'Suunan maksmisele...',
+  'checkout.emergencyContact': 'Hädaolukorra kontakt (valikuline)',
+  'checkout.emergencyContactDescription': 'Anna kontaktandmed juhuks, kui me ei saa su tellimust täita',
+  'checkout.emergencyContactName': 'Hädaolukorra kontakti nimi',
+  'checkout.emergencyContactPhone': 'Hädaolukorra kontakti telefon',
+  'checkout.emergencyContactEmail': 'Hädaolukorra kontakti e-post',
+  'checkout.deliveryMethod': 'Tarneviis',
+  'checkout.shipping': 'Kohaletoimetamine (aadressile)',
+  'checkout.selfPickup': 'Ise järele tulek',
+  'checkout.pickupLocation': 'Kättesaamise koht',
+  'checkout.selectPickupLocation': 'Vali kättesaamise koht',
+  'checkout.pickupDate': 'Kättesaamise kuupäev',
+  'checkout.pickADate': 'Vali kuupäev',
+  'checkout.pickupTime': 'Kättesaamise aeg',
+  'checkout.pickupHours': 'Kättesaadavad tunnid: 9:00 - 18:00',
+  'checkout.instructions': 'Juhised',
+  'checkout.selectLocation': 'Palun vali kättesaamise koht',
+  'checkout.selectDate': 'Palun vali kättesaamise kuupäev',
+  'checkout.selectTime': 'Palun vali kättesaamise aeg',
+
+  // Orders
+  'orders.title': 'Minu tellimused',
+  'orders.noOrders': 'Tellimusi pole veel',
+  'orders.startShopping': 'Alusta ostlemist',
+  'orders.orderFrom': 'Tellimus alates',
+  'orders.items': 'toodet',
+  'orders.loginRequired': 'Palun logi sisse, et oma tellimusi vaadata',
+
+  // Profile
+  'profile.title': 'Minu profiil',
+  'profile.email': 'E-post',
+  'profile.fullName': 'Täisnimi',
+  'profile.save': 'Salvesta muudatused',
+  'profile.saved': 'Profiil edukalt uuendatud',
+  'profile.loginRequired': 'Palun logi sisse, et oma profiili vaadata',
+
+  // Auth
+  'auth.login': 'Logi sisse',
+  'auth.signup': 'Registreeru',
+  'auth.signupTitle': 'Loo konto',
+  'auth.loginTitle': 'Tere tulemast tagasi',
+  'auth.password': 'Parool',
+  'auth.confirmPassword': 'Kinnita parool',
+  'auth.haveAccount': 'Kas teil on juba konto?',
+  'auth.noAccount': 'Kas teil pole kontot?',
+  'auth.signupLink': 'Registreeru',
+  'auth.loginLink': 'Logi sisse',
+  'auth.or': 'või',
+
+  // About
+  'about.title': 'Meist - ZeroCals',
+  'about.mission': 'Meie missioon',
+  'about.missionText': 'ZeroCalis usume, et te ei peaks ohverdama maitset tervise nimel. Meie missioon on luua maitsvaid, madalate kaloritega magustoite, mis rahuldavad teie maiushimu ilma süütundeta.',
+  'about.story': 'Meie lugu',
+  'about.storyText': 'Asutatud 2024. aastal, ZeroCals sündis lihtsast ideest: tervislikud magustoidud võivad maitseda suurepäraselt. Kasutame ainult parimaid koostisosi ja uuenduslikke tehnikaid, et valmistada maiuseid, mis on teie jaoks sama head kui maitsvad.',
+
+  // Admin
+  'admin.title': 'Administraatori töölaud',
+  'admin.products': 'Tooted',
+  'admin.orders': 'Tellimused',
+  'admin.accessDenied': 'Juurdepääs keelatud. Vajalikud on administraatori õigused.',
+  'admin.goHome': 'Mine avalehele',
+  'admin.loading': 'Laadimine...',
+
+  // Common
+  'common.status': 'Staatus',
+  'common.date': 'Kuupäev',
+  'common.quantity': 'Kogus',
+  'common.price': 'Hind',
+  'common.cancel': 'Tühista',
+  'common.save': 'Salvesta',
+  'common.delete': 'Kustuta',
+  'common.edit': 'Muuda',
+};

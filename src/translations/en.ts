@@ -1,0 +1,131 @@
+export default {
+  // Navigation
+  'nav.home': 'Home',
+  'nav.desserts': 'Desserts',
+  'nav.about': 'About',
+  'nav.cart': 'Cart',
+  'nav.login': 'Login',
+  'nav.logout': 'Logout',
+  'nav.profile': 'My Profile',
+  'nav.orders': 'My Orders',
+  'nav.admin': 'Admin',
+
+  // Homepage
+  'home.title': 'Welcome to ZeroCals',
+  'home.subtitle': 'Guilt-free desserts that taste amazing. Low-calorie, healthy, and crafted with care.',
+  'home.browseDesserts': 'Browse Desserts',
+  'home.popularDesserts': 'Popular Desserts',
+  'home.cta.title': 'Ready to indulge guilt-free?',
+  'home.cta.subtitle': 'Explore our complete dessert collection and satisfy your sweet tooth',
+  'home.viewAll': 'View All Desserts',
+
+  // Desserts Page
+  'desserts.title': 'Our Desserts',
+  'desserts.subtitle': 'Indulge in our selection of low-calorie desserts, crafted to satisfy your cravings without the guilt.',
+  'desserts.noDesserts': 'No desserts available yet.',
+  'desserts.calories': 'calories',
+  'desserts.addToCart': 'Add to Cart',
+  'desserts.addedToCart': 'added to cart',
+
+  // Dessert Detail
+  'detail.backToDesserts': 'Back to Desserts',
+  'detail.popular': 'Popular',
+  'detail.perServing': 'per serving',
+  'detail.nutritionalInfo': 'Nutritional Information',
+  'detail.noImage': 'No image available',
+  'detail.notFound': 'Dessert not found',
+
+  // Cart
+  'cart.title': 'Shopping Cart',
+  'cart.items': 'items',
+  'cart.empty': 'Your cart is empty',
+  'cart.orderSummary': 'Order Summary',
+  'cart.subtotal': 'Subtotal',
+  'cart.total': 'Total',
+  'cart.checkout': 'Proceed to Checkout',
+
+  // Checkout
+  'checkout.title': 'Checkout',
+  'checkout.shippingInfo': 'Shipping Information',
+  'checkout.fullName': 'Full Name',
+  'checkout.email': 'Email',
+  'checkout.address': 'Address',
+  'checkout.city': 'City',
+  'checkout.zipCode': 'ZIP Code',
+  'checkout.processing': 'Processing...',
+  'checkout.payStripe': 'Pay with Stripe',
+  'checkout.loginRequired': 'Please log in to checkout',
+  'checkout.redirecting': 'Redirecting to payment...',
+  'checkout.emergencyContact': 'Emergency Contact (Optional)',
+  'checkout.emergencyContactDescription': 'Provide contact information in case we cannot fulfill your order',
+  'checkout.emergencyContactName': 'Emergency Contact Name',
+  'checkout.emergencyContactPhone': 'Emergency Contact Phone',
+  'checkout.emergencyContactEmail': 'Emergency Contact Email',
+  'checkout.deliveryMethod': 'Delivery Method',
+  'checkout.shipping': 'Shipping (Delivery to address)',
+  'checkout.selfPickup': 'Self Pickup',
+  'checkout.pickupLocation': 'Pickup Location',
+  'checkout.selectPickupLocation': 'Select pickup location',
+  'checkout.pickupDate': 'Pickup Date',
+  'checkout.pickADate': 'Pick a date',
+  'checkout.pickupTime': 'Pickup Time',
+  'checkout.pickupHours': 'Available pickup hours: 9:00 - 18:00',
+  'checkout.instructions': 'Instructions',
+  'checkout.selectLocation': 'Please select a pickup location',
+  'checkout.selectDate': 'Please select a pickup date',
+  'checkout.selectTime': 'Please select a pickup time',
+
+  // Orders
+  'orders.title': 'My Orders',
+  'orders.noOrders': 'No orders yet',
+  'orders.startShopping': 'Start Shopping',
+  'orders.orderFrom': 'Order from',
+  'orders.items': 'items',
+  'orders.loginRequired': 'Please log in to view your orders',
+
+  // Profile
+  'profile.title': 'My Profile',
+  'profile.email': 'Email',
+  'profile.fullName': 'Full Name',
+  'profile.save': 'Save Changes',
+  'profile.saved': 'Profile updated successfully',
+  'profile.loginRequired': 'Please log in to view your profile',
+
+  // Auth
+  'auth.login': 'Login',
+  'auth.signup': 'Sign Up',
+  'auth.signupTitle': 'Create Account',
+  'auth.loginTitle': 'Welcome Back',
+  'auth.password': 'Password',
+  'auth.confirmPassword': 'Confirm Password',
+  'auth.haveAccount': 'Already have an account?',
+  'auth.noAccount': "Don't have an account?",
+  'auth.signupLink': 'Sign up',
+  'auth.loginLink': 'Log in',
+  'auth.or': 'or',
+
+  // About
+  'about.title': 'About ZeroCals',
+  'about.mission': 'Our Mission',
+  'about.missionText': 'At ZeroCals, we believe you shouldn\'t have to sacrifice taste for health. Our mission is to create delicious, low-calorie desserts that satisfy your sweet tooth without the guilt.',
+  'about.story': 'Our Story',
+  'about.storyText': 'Founded in 2024, ZeroCals was born from a simple idea: healthy desserts can taste amazing. We use only the finest ingredients and innovative techniques to craft treats that are as good for you as they are delicious.',
+
+  // Admin
+  'admin.title': 'Admin Dashboard',
+  'admin.products': 'Products',
+  'admin.orders': 'Orders',
+  'admin.accessDenied': 'Access denied. Admin privileges required.',
+  'admin.goHome': 'Go Home',
+  'admin.loading': 'Loading...',
+
+  // Common
+  'common.status': 'Status',
+  'common.date': 'Date',
+  'common.quantity': 'Quantity',
+  'common.price': 'Price',
+  'common.cancel': 'Cancel',
+  'common.save': 'Save',
+  'common.delete': 'Delete',
+  'common.edit': 'Edit',
+};
